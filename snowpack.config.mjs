@@ -1,6 +1,7 @@
 export default {
     "exclude": [
-        '**/doc/**', 
+        '**/doc/**',
+        '**/docs/**', 
         '**/css.html', 
         '**/views/*.html', 
         '**/package.json', 
