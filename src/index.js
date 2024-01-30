@@ -6,7 +6,7 @@ import {layout} from './views/layout';
 import {AddressList} from './views/adr';
 
 var tracker = new Tracker();
-tracker.initTracker().then(m.redraw);
+tracker.initTracker().then(tracker.setSatusCB(m.redraw));
 
 const Loading = {
   view: () => m('h1', 'Loading...')
