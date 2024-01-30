@@ -1,0 +1,21 @@
+{
+  "name": "fb_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "snowpack": "^3.7.1"
+  },
+  "dependencies": {
+    "idb": "^8.0.0",
+    "mithril": "^2.2.2",
+    "npm": "^10.3.0"
+  }
+}

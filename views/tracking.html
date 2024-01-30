@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head lang="de">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="../style.css" />
+        <title>Fahrtenbuch</title>
+    </head>
+    <body>
+        <div class='app'>
+            <header><h1 class="gradient-text">Aufnahme</h1></header>
+            <main>
+                <div class='card'>
+                    <div class="'stat-item">Status: </div>
+                    <div class="'stat-item">Distanz: </div>
+                    <div class="'stat-item">Datenpunkte: </div>
+                </div>
+                <datalist id='adr_shorts'>
+                    <!--vnode.attrs.storage.addresses.map(function (adr) { return m('option', {value: adr.short}, adr.short);}) -->
+                </datalist>
+                <div class='card'>
+                    <form>
+                        <label for='ffrom'>Von:</label>
+                        <input class="oval-xlg" id="ffrom" type="text" name="ffrom" list="adr_shorts" placeholder="Kurz"/>
+                        <label for='fto'>Nach:</label>
+                        <input class="oval-xlg" id="fto" type="text" name="fto" list="adr_shorts" placeholder="Kurz"/>
+                    </form>
+                </div>
+                <div class="spaced-container">
+                    <button class='oval-sm gradient-text' style="float: none">Start</button>
+                    <button class='oval-sm' style="float: none">Stop</button>
+                    <button class='oval-sm' style="float: none">Abbruch</button>
+                </div>
+            </main>
+            <footer>TLR Tools</footer>
+        </div>
+    </body>
