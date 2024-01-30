@@ -11,5 +11,4 @@ export default {
         minify: true,
         target: 'es2020',
       },
-
   };
